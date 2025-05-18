@@ -1,0 +1,177 @@
+body {
+  padding: 20px;
+  background: #f9f9f9;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+@media screen and (max-width: 500px) {
+  body {
+    height: 90dvh;
+  }
+}
+
+h2 {
+  color: #ff6b82;
+  text-align: center;
+}
+
+.unit-option {
+  border: 0.1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  cursor: pointer;
+  background: white;
+  transition: border-color 0.3s ease;
+}
+
+.unit-option:hover {
+  border-color: #ff6b82;
+}
+
+.unit-option.selected {
+  border-color: #ff6b82;
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.3);
+}
+
+.discount {
+  background: #f8bbd0;
+  color: #ff6b82;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.price-section {
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.most-popular {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff6b82;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.options {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s ease;
+  margin-top: 12px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+select {
+  margin: 0;
+  width: 109px;
+  padding: 4px;
+  border: 0.1px solid #ccc;
+  border-radius: 4px;
+  outline-color: #f8bbd0;
+  margin-bottom: 8px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.add-to-cart {
+  background: #ff6b82;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+.bogo-right {
+  height: 1px;
+}
+
+.bogo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 1px 0px 1px 0px;
+}
+
+.bogo-right {
+  height: 0.1px;
+  background-color: #ccc;
+  flex: 1;
+  margin: 0px 20px;
+}
+.yay-bogo,
+.free-delivery {
+  color: #ff6b82;
+}
+.unit-with-usd,
+.flex_total_content_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-section,
+.options-div-sub-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.yay-bogo-body {
+  width: 500px;
+  height: fit-content;
+  border: 0.1px solid #ccc;
+  margin: auto;
+  padding: 0px 20px 20px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px 1px #ccc;
+}
+
+.options-div-container {
+  position: relative;
+  left: 70px;
+  display: flex;
+  gap: 10px;
+  width: 206px;
+}
+
+.series-number {
+  position: absolute;
+  bottom: 12px;
+  left: -30px;
+}
